@@ -26,7 +26,8 @@
               "src/styles.css",
               "public/css/w3.css",
               "public/css/w3.theme.css"
-            ]
+            ],
+            "outputPath": "dist/starting-app"
           },
           "configurations": {
             "production": {
@@ -82,6 +83,9 @@
               "src/styles.css"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
