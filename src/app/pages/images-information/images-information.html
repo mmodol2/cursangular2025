@@ -1,0 +1,10 @@
+<div class="w3-grid container">
+    @for(image of images(); track image.title) {
+        <div class="w3-card w3-theme w3-margin w3-padding mycard">
+            <h3 class="w3-center">{{ image.title }}</h3>
+            <h4 class="w3-center">{{ image.authors }} ({{ image.date }})</h4>
+            <img class="myimg" [src]="image.url"/>
+            <p>{{ image.explanation }}</p>
+        </div>
+    }
+</div>

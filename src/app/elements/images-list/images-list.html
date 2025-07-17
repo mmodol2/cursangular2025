@@ -1,0 +1,13 @@
+<div class="lcontent w3-margin w3-center">
+    @if(images().length > 0) {
+        <button class="w3-button w3-theme w3-margin" (click)="onRandomImage()">Selecció aleatòria</button>
+    }
+    <button class="w3-button w3-margin w3-circle w3-theme" [routerLink]="['/add']">+</button>
+    <br/>
+    @for(image of images(); track image.title) {
+        <img class="thumb w3-margin" [src]="image.url" (click)="onSelectedImage($index)" />
+        <br/>
+    }
+    <p>Total imatges: {{ images().length }}</p>
+
+</div>

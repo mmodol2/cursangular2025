@@ -1,0 +1,25 @@
+<div class="mycard w3-card w3-padding w3-theme">
+    <h1>Afegir una nova imatge</h1>
+    <label class="w3-margin-bottom">Autors</label>
+    <input class="w3-input" type="text" [(ngModel)]="imgData().authors" />
+    <br/>
+
+    <label class="w3-margin-bottom">Data</label>
+    <input class="w3-input" type="text" [(ngModel)]="imgData().date" />
+    <br/>
+
+    <label class="w3-margin-bottom">Expliació</label>
+    <br/>
+    <textarea [(ngModel)]="imgData().explanation" class="w3-input"></textarea>
+    <br/>
+
+    <label class="w3-margin-bottom">URL</label>
+    <input class="w3-input" type="text" [(ngModel)]="imgData().url" />
+    <br/>
+
+    <label class="w3-margin-bottom">Títol</label>
+    <input class="w3-input" type="text" [(ngModel)]="imgData().title" />
+    <br/>
+
+    <button class="w3-button w3-theme-l5" (click)="onAddImage()">Afegir imatge</button>
+</div>

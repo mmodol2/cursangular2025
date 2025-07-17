@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+}
+
+.imgList {
+    flex-grow: 1;
+}
+
+.rndImg {
+    flex-grow: 9;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.mycard {
+    max-width: 512px;
+    margin: auto;
+    margin-top: 64px;
+}

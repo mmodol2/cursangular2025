@@ -1,0 +1,11 @@
+.container {
+    grid-template-columns: auto auto auto;
+}
+
+.mycard {
+    text-align: justify;
+}
+
+.myimg {
+    width: 100%;
+}

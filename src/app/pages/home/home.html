@@ -1,0 +1,22 @@
+<div class="hcontent">
+  <!--@if(!logged()) {
+    <div class="mycard w3-card w3-padding w3-theme">
+      <h1>Inici de sessió</h1>
+      <label class="w3-margin-bottom">Nom d'usuari</label>
+      <input class="w3-input" type="text" [(ngModel)]="username" />
+      <br/>
+      <button class="w3-button w3-theme-l5" (click)="onLogin()">Iniciar sessió</button>
+    </div>
+  } @else {-->
+    <h2 class="w3-center">Benvingut/da {{ username() }}</h2>
+
+    <div class="container">
+      <div class="imgList">
+        <app-images-list (randomImage)="onRandomImage($event)" (selectedImage)="onSelectedImage($event)" />
+      </div>
+      <div class="rndImg">
+        <app-image-detail [imgSrc]="imgSrc()" (closeImage)="onCloseImage()" />
+      </div>
+    </div>
+  <!--}-->
+</div>
